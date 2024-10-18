@@ -34,7 +34,7 @@ The **USA Allies Transaction Analysis** The USA Allies Transaction Analysis was 
 
 
 ## Project Insights
-- Legal transactions dominate the dataset, accounting for 69% of all transactions, while illegal transactions make up 31%.
+- Illegal transactions dominate the dataset, accounting for 69% of all transactions, while legal transactions make up 31%.
 
 - Brazil demonstrates a strong performance in various transfer categories, leading Offshore Transfers with $584.7 million and making significant contributions in Stock Transfers, totaling $507.8 million. India exhibits the highest volume of Cryptocurrency transactions at $529 million, alongside $526.4 million in Stocks Transfers. Singapore distinguishes itself in Offshore Transfers with $547.5 million and in Property Purchases, amounting to $501 million. The UK maintains a balanced distribution across transfer types, notably excelling in Cash Withdrawals at $538.9 million and Stocks Transfers at $512.8 million. Meanwhile, the USA ranks first in Cryptocurrency transactions, recording $510.2 million, and shows robust activity in Cash Withdrawals, totaling $495.4 million.
 
