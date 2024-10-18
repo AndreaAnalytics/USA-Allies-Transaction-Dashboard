@@ -1,0 +1,44 @@
+## Objective
+Analzye the USA Allies Transactions dataset to uncover patterns of illicit financial activities, highlight potential risks, and assess the overall flow of illegally obtained funds across United States' allies. 
+
+-- Imported into SQLite
+
+CREATE TABLE "USA" ('Country' TEXT,
+"Amount" REAL,
+'Transaction_Type' TEXT,
+'Industry' TEXT,
+'Destination_Country' TEXT,
+'Reported_by_Authority' TEXT,
+'Source_of_Money' TEXT,
+'Money_Laundering_Risk_Score' INTEGER,
+'Shell_Companies_Involved' INTEGER,
+'Tax_Haven_Country' TEXT);
+
+-- Aggregate Functions
+-- Total Transactions Value by Country
+
+SELECT country, SUM(amount) AS total_transactions
+FROM USA
+GROUP BY country;
+
+-- Top 3 Countries Transferring Money to Tax Havens 
+
+SELECT country, SUM(amount) AS sum_amount
+FROM USA
+GROUP BY country
+ORDER BY sum_amount DESC
+LIMIT 3;
+
+-- Transactions Types with High Money Laundering Risk 
+
+SELECT transaction_type, COUNT(money_laundering_risk_score) AS high_risk
+FROM USA
+WHERE money_laundering_risk_score >= 6 
+GROUP BY transaction_type;
+
+-- Most Frequent Transaction Types
+
+SELECT transaction_type, COUNT(transaction_type) AS laundering_count, SUM(amount) AS total_transactions
+FROM USA
+GROUP BY transaction_type
+ORDER BY laundering_count DESC;
