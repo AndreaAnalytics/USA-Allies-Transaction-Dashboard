@@ -1,5 +1,5 @@
 # USA-Allies-Transaction-Analysis
-The **USA Allies Transaction Analysis** The USA Allies Transaction Analysis was cleaned in Excel, imported into SQLite for efficient data retrieval and management, and visualized in Power BI for comprehensive reporting and insights. It compares the distribution of illegal and legal transactions across various transaction types, evaluates transaction amounts by country, and provides a detailed breakdown of the total sum of money each country sent through various transaction types (e.g., Cash Withdrawal, Stocks Transfer, Offshore Transfer).
+The **USA Allies Transaction Analysis** was cleaned in Excel, imported into SQLite for efficient data retrieval and management, and visualized in Power BI for comprehensive reporting and insights. It compares the distribution of illegal and legal transactions across various transaction types, evaluates transaction amounts by country, and provides a detailed breakdown of the total sum of money each country sent through various transaction types (e.g., Cash Withdrawal, Stocks Transfer, Offshore Transfer).
 
 
 ## Dataset used
